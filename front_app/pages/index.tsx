@@ -20,15 +20,15 @@ const HomePage: NextPage<{
   return (
       <>
         <Head>
-          <title>СК СТРОЙПРОЕКТ</title>
+          <title>POZDNO TECH</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta name="description" content="Главная строительная компания в СНГ" />
+          <meta name="description" content="IT приносит деньги бизнесу" />
         </Head>
         <Slider data={slider} />
         <About />
+        <Works data={work} />
         <Projects data={products} />
         <Services data={service} />
-        <Works data={work} />
         <Contact path={'main'} />
       </>
   )

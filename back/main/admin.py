@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page
 # Register your models here.
-admin.site.site_header = 'СК СТРОЙ ПРОЕКТ'
+admin.site.site_header = 'POZDNO TECH'
 
 
 @admin.register(Products)

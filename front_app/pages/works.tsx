@@ -12,7 +12,7 @@ const WorksPage: NextPage<{work:ServerData[]}> = ({ work }) => {
   return (
       <>
         <Head>
-          <title>Наши работы</title>
+          <title>Каталог работ</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="description" content="Работы которые мы предоставляем" />
         </Head>
