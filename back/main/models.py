@@ -46,8 +46,8 @@ class OurWork(models.Model):
         return f"{self.title}"
 
     class Meta:
-        verbose_name = 'Наши работы'
-        verbose_name_plural = 'Наши работы'
+        verbose_name = 'Мои работы'
+        verbose_name_plural = 'Мои работы'
 
 
 class OurService(models.Model):
@@ -59,8 +59,8 @@ class OurService(models.Model):
         return f"{self.title}"
 
     class Meta:
-        verbose_name = 'Наши услуги'
-        verbose_name_plural = 'Наши услуги'
+        verbose_name = 'Мои услуги'
+        verbose_name_plural = 'Мои услуги'
 
 
 class Products(models.Model):
