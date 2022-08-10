@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page
+from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page,Wether
 # Register your models here.
 admin.site.site_header = 'POZDNO TECH'
 
@@ -46,3 +46,9 @@ class SupportAdmin(admin.ModelAdmin):
     search_fields = ("name__startswith",)
     list_filter = ('phone','name','date' )
     readonly_fields = ('date',)
+
+
+@admin.register(Wether)
+class WetherAdmin(admin.ModelAdmin):
+    list_display = ('id','user_id')
+    search_fields = ("user_id", )

@@ -113,3 +113,13 @@ def support__create(sender, instance, created, **kwargs):
         settings.EMAIL_HOST_USER,
         [settings.EMAIL_HOST_USER],
     )
+
+class Wether(models.Model):
+    user_id = models.CharField(max_length=200, verbose_name='Id пользователя')
+
+    def __str__(self):
+        return f"{self.user_id}"
+
+    class Meta:
+        verbose_name = 'Приложение погоды'
+        verbose_name_plural = 'Приложение погоды'

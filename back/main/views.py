@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page
-from .serializers import OurServiceSerializer, OurWorkSerializer, ProductsSerializer,FilesSerializer,MainCarouselSerializer, SupportSerializer,PageSerializer
+from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page,Wether
+from .serializers import OurServiceSerializer, OurWorkSerializer, ProductsSerializer,FilesSerializer,MainCarouselSerializer, SupportSerializer,PageSerializer,WetherSerializer
 
 #Products
 class getProduct(generics.RetrieveAPIView):
@@ -62,4 +62,10 @@ class createProposal(generics.CreateAPIView):
     serializer_class = SupportSerializer
     authentication_classes = []
 
+
+#Wether Api
+class createWether(generics.CreateAPIView):
+    queryset = Wether.objects.all()
+    serializer_class = WetherSerializer
+    authentication_classes = []
 

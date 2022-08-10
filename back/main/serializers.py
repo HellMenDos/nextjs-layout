@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page
+from .models import Products,Files,MainCarousel,OurWork,OurService,Support,Page,Wether
 
 class ProductsSerializer(serializers.ModelSerializer):
 
@@ -45,4 +45,11 @@ class SupportSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Support
+        fields = '__all__'
+
+
+class WetherSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Wether
         fields = '__all__'
