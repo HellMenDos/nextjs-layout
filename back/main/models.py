@@ -115,7 +115,7 @@ def support__create(sender, instance, created, **kwargs):
     )
 
 class Wether(models.Model):
-    user_id = models.CharField(max_length=200, verbose_name='Id пользователя')
+    user_id = models.CharField(max_length=200, verbose_name='Id пользователя',unique=True)
 
     def __str__(self):
         return f"{self.user_id}"
