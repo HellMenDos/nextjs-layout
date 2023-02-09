@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-ig!==(bpo3!k^)9$k(u&$-s7^$oz=r%!@0w@yq)k#-m&5t%sz3
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://pozdnotech.ru','https://www.pozdnotech.ru/']
 
 CORS_ORIGIN_ALLOW_ALL=True
 # Application definition

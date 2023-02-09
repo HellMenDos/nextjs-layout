@@ -1,4 +1,4 @@
-export const Url = 'http://62.113.110.28/api'
+export const Url = 'https://pozdnotech.ru/api'
 
 export type Section = 'main' | 'tech'
 
